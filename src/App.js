@@ -1,10 +1,12 @@
 import './App.css';
+import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello World</h2>
-      <h1>wlcome to pet Bazar</h1>
+      <Header></Header>
+      <button className="btn btn-primary">Button</button>
+      <button className="btn btn-secondary">DaisyUi</button>
     </div>
   );
 }
