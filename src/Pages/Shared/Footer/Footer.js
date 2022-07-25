@@ -5,7 +5,7 @@ const Footer = () => {
         <div className='bg-base-200'>
             <footer class="footer p-10 text-base-content md:container md:mx-auto grid grid-cols-2 md:grid-cols-3 lg-grid-cols-4">
                 <div>
-                    <span class="footer-title">Services</span>
+                    <span class="footer-title">Service</span>
                     <a class="link link-hover">Branding</a>
                     <a class="link link-hover">Design</a>
                     <a class="link link-hover">Marketing</a>
