@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header class="navbar bg-base-200">
+        <header className="navbar bg-base-200">
             <div className="navbar md:container md:mx-auto">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <label tabIndex="0" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to="/">Home</Link></li>
-                            <li tabindex="0">
+                            <li tabIndex="0">
                                 <a>
                                     Pets
-                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                                 </a>
-                                <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <ul className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                                     <li><a>Submenu 1</a></li>
                                     <li><a>Submenu 2</a></li>
                                 </ul>
@@ -29,26 +29,34 @@ const Header = () => {
                         PET<span className='text-secondary font-extrabold'>BAZAR</span>
                     </Link>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal p-0">
-                        <li><Link to="/">Home</Link></li>
-                        <li tabindex="0">
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal p-0">
+                        <li><Link to="/">
+                            <button className="text-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                            </button>
+                        </Link></li>
+                        <li tabIndex="0">
                             <a>
                                 Pets
-                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                             </a>
-                            <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <ul className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                                 <li><a>Submenu 1</a></li>
                                 <li><a>Submenu 2</a></li>
                             </ul>
                         </li>
-                        <li><Link to="/about">about</Link></li>
+                        <li><Link to="/about">
+                            <button className="text-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </button>
+                        </Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
                     <Link to="/search">
-                        <button class="btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        <button className="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                         </button>
                     </Link>
                     <div className="dropdown dropdown-end">
